@@ -8,49 +8,49 @@ function Skills() {
       id: 1,
       name: "HTML",
       src: "Images/html.png",
-      p: "70",
+      p: "60",
     },
     {
       id: 2,
       name: "css",
       src: "Images/css.png",
-      p: "70",
+      p: "65",
     },
     {
       id: 3,
       name: "Javascript",
       src: "Images/Javasript.png",
-      p: "60",
+      p: "40",
     },
     {
       id: 4,
       name: "react",
       src: "Images/react.png",
-      p: "40",
+      p: "30",
     },
     {
       id: 5,
       name: "Next",
       src: "Images/next.png",
-      p: "40",
+      p: "25",
     },
     {
       id: 6,
       name: "Tailwind",
       src: "Images/tailwind.png",
-      p: "60",
+      p: "50",
     },
     {
       id: 7,
       name: "mongo",
       src: "Images/mongo.png",
-      p: "50",
+      p: "30",
     },
     {
       id: 8,
       name: "sql",
       src: "Images/sql.png",
-      p: "30",
+      p: "20",
     },
     {
       id: 9,
@@ -62,13 +62,13 @@ function Skills() {
       id: 10,
       name: "bootstarp",
       src: "Images/bootstrap.png",
-      p: "80",
+      p: "60",
     },
     {
       id: 11,
       name: "Node",
       src: "Images/node.png",
-      p: "40",
+      p: "35",
     },
   ];
   const responsive = {
@@ -92,7 +92,10 @@ function Skills() {
   };
 
   return (
-    <div className="w-full h-full bg-gradient-to-b from-gray-700 to-gray-800 md:px-12">
+    <div
+      name="skills"
+      className="w-full h-full bg-gradient-to-b from-gray-700 to-gray-800 md:px-12"
+    >
       <h1 className="text-5xl font-WorkSans font-bold text-white text-center pb-16">
         Skills
       </h1>
@@ -100,7 +103,7 @@ function Skills() {
         {skill.map(({ id, name, src, p }) => (
           <div
             key={id}
-            className="md:flex mb-16 flex-col font-Nunito justify-center text-center items-center  text-gray-300"
+            className="md:flex flex-col font-Nunito justify-center text-center items-center  text-gray-300"
           >
             <h1 className="text-xl uppercase">{name}</h1>
             <div className="flex justify-center">

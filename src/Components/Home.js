@@ -46,7 +46,10 @@ function Home() {
   };
 
   return (
-    <div className="w-full pt-28 pb-2 bg-gradient-to-b from-black via-slate-700 to-gray-700">
+    <div
+      name="home"
+      className="w-full pt-28 pb-2 bg-gradient-to-b from-black via-slate-700 to-gray-700"
+    >
       <div className="flex flex-col md:flex-row h-full justify-around items-center ">
         <div className="md:ml-24 text-center">
           <span className="md:text-6xl text-3xl mx-2 text-white ">
@@ -57,7 +60,11 @@ function Home() {
             <span>{text}</span>
           </h1>
         </div>
-        <img className="w-72 md:mr-12 mt-12 animate-bounce" src="Images/header.svg" alt="leander" />
+        <img
+          className="w-72 md:mr-12 mt-12 animate-bounce"
+          src="Images/header.svg"
+          alt="leander"
+        />
       </div>
     </div>
   );

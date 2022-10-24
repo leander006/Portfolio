@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const links = [
     { id: 1, links: "home" },
-    { id: 2, links: "about" },
-    { id: 3, links: "portfolio" },
-    { id: 4, links: "skills" },
+    { id: 2, links: "skills" },
+    { id: 3, links: "about" },
+    { id: 4, links: "portfolio" },
     { id: 5, links: "contact" },
   ];
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="flex justify-between items-center w-full z-10 fixed h-16 bg-black text-white">
+    <div className="flex justify-between items-center w-full z-20 fixed h-16 bg-black text-white">
       <div>
         <h1 className="ml-2 text-4xl font-Blaka">Leander</h1>
       </div>
@@ -22,7 +23,9 @@ function Navbar() {
             key={id}
             className="text-gray-500 mx-4 font-medium capitalize cursor-pointer hover:scale-125 duration-300"
           >
-            {links}
+            <Link to={links} smooth duration={500}>
+              {links}
+            </Link>
           </li>
         ))}
       </ul>
@@ -44,7 +47,14 @@ function Navbar() {
               key={id}
               className="text-gray-500 py-6 mx-4 font-medium capitalize cursor-pointer hover:scale-125 duration-300"
             >
-              {links}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={links}
+                smooth
+                duration={500}
+              >
+                {links}
+              </Link>
             </li>
           ))}
         </ul>
