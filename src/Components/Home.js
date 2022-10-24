@@ -49,7 +49,7 @@ function Home() {
   return (
     <div
       name="home"
-      className="w-full h-3/4 pt-28 pb-2 bg-[url('/Users/leanderleonarddsilva/Desktop/Portfolio/portfolio/public/Images/banner.png')]"
+      className="w-full h-3/4 pt-28 pb-2 bg-[url('assests/banner.png')]"
     >
       <div className="flex flex-col md:flex-row h-full justify-around items-center ">
         <div className="md:ml-24 text-center">
