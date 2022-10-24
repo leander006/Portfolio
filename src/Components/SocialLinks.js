@@ -51,7 +51,7 @@ function SocialLinks() {
               href={href}
               target="_blank"
               rel="noreferrer"
-              className="flex bg-gray-500 h-full px-4 w-full ml-[-100px] hover:ml-[-10px] justify-between duration-300 rounded-md items-center text-white"
+              className="flex bg-[#3e0a92] h-full px-4 w-full ml-[-100px] hover:ml-[-10px] justify-between duration-300 rounded-md items-center text-white"
             >
               {child}
             </a>

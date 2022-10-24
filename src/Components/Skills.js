@@ -94,7 +94,7 @@ function Skills() {
   return (
     <div
       name="skills"
-      className="w-full h-full bg-gradient-to-b from-gray-700 to-gray-800 md:px-12"
+      className="w-full py-10 h-full bg-gradient-to-r from-[#9a61f5] via-[#2a0c59] to-[#310080]   md:px-12"
     >
       <h1 className="text-5xl font-WorkSans font-bold text-white text-center pb-16">
         Skills

@@ -21,7 +21,7 @@ function Navbar() {
         {links.map(({ links, id }) => (
           <li
             key={id}
-            className="text-gray-500 mx-4 font-medium capitalize cursor-pointer hover:scale-125 duration-300"
+            className="text-gray-200 mx-4 font-medium capitalize cursor-pointer hover:scale-125 duration-300"
           >
             <Link to={links} smooth duration={500}>
               {links}
@@ -41,11 +41,11 @@ function Navbar() {
         )}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-gray-500 bg-gradient-to-b from-black to-gray-800">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-gray-500 bg-gradient-to-b from-[#7310ca] to-[#1a023f]">
           {links.map(({ links, id }) => (
             <li
               key={id}
-              className="text-gray-500 py-6 mx-4 font-medium capitalize cursor-pointer hover:scale-125 duration-300"
+              className="text-gray-200 py-6 mx-4 font-medium capitalize cursor-pointer hover:scale-125 duration-300"
             >
               <Link
                 onClick={() => setNav(!nav)}
