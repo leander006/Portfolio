@@ -40,28 +40,32 @@ function Portfolio() {
     },
   ];
   return (
-    <div
-      name="portfolio"
-      className="w-full h-full bg-gradient-to-r from-[#190338] via-[#26055b] to-[#2b016e]"
-    >
-      <div className="text-4xl font-WorkSans text-white text-center py-6">Portfolio</div>
-      <p className="text-2xl text-gray-300 my-3 font-WorkSans text-center pb-2">
-        This are some of my projects with github repo
+    <div name="portfolio" className="w-screen pt-12 md:h-screen">
+      <div className="text-5xl mx-6 pb-3 lg:mx-24 font-WorkSans font-bold text-blue-500 ">
+        PORTFOLIO
+      </div>
+      <p className="text-xl text-gray-500 mx-6 lg:mx-24 font-WorkSans pb-2">
+        This are some of the projects i worked on
       </p>
       <div className="grid rounded-md md:grid-cols-2 gap-8 px-16 md:px-24 py-2 lg:grid-cols-3 items-center justify-center">
         {portfolio.map(({ id, title, href, src }) => (
-          <div key={id} className=" shadow-md shadow-gray-600">
-            <h1 className="text-xl md:text-2xl mb-2 text-white text-center">{title}</h1>
+          <div
+            key={id}
+            className="relative group rounded-md shadow-xl shadow-gray-400 hover:bg-gradient-to-b from-blue-400 to-blue-600"
+          >
             <img
-              className="rounded-md duration-300 hover:scale-105"
+              className="rounded-md group-hover:opacity-10"
               src={src}
               alt="portfolio"
             />
-            <h1 className="text-gray-100 text-center text-xl mt-2">
-              <a href={href} target="_blank" rel="noreferrer">
-                Code
-              </a>
-            </h1>
+            <div className="hidden group-hover:block absolute top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+              <h1 className="text-white text-lg font-bold my-2">{title}</h1>
+              <h1 className="text-black text-xl rounded-md bg-white w-fit p-2 ">
+                <a href={href} target="_blank" rel="noreferrer">
+                  Code
+                </a>
+              </h1>
+            </div>
           </div>
         ))}
       </div>

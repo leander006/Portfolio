@@ -7,7 +7,7 @@ function Home() {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const toRotate = [
     "FullStack Developer",
-    "Java programming",
+    "Java programmer",
     "Blockchain enthusiast",
   ];
   const period = 2000;
@@ -49,23 +49,24 @@ function Home() {
   return (
     <div
       name="home"
-      className="w-full h-3/4 pt-28 pb-2 bg-[url('assests/banner.png')]"
+      className="h-screen w-screen flex justify-center  items-center z-0 text-black "
     >
-      <div className="flex flex-col md:flex-row h-full justify-around items-center ">
-        <div className="md:ml-24 text-center">
-          <span className="md:text-6xl text-3xl mx-2 text-white ">
-            Welcome to my Portfolio
-          </span>
-          <h1 className="text-xl text-gray-400 mt-2 w-full">
-            {`Hi! I am Leander `}
-            <span>{text}</span>
-          </h1>
+      <div>
+        <div className="text-center space-y-3">
+          <h1>Let's build something new</h1>
+          <div className="text-2xl md:text-5xl">
+            Hello! I am Leander D'silva
+          </div>
+          <div className="text-xl md:text-3xl ">
+            I am a <span className="text-blue-500">{text}</span>
+          </div>
+          <div className="text-xl  text-gray-600">
+            <p>
+              I focussed on building responsive websites with end to end
+              protection
+            </p>
+          </div>
         </div>
-        <img
-          className="w-72 md:mr-12 mt-12 animate-bounce"
-          src="Images/header.svg"
-          alt="leander"
-        />
       </div>
     </div>
   );
