@@ -40,7 +40,7 @@ function Portfolio() {
     },
   ];
   return (
-    <div name="portfolio" className="w-screen pt-12 md:h-screen">
+    <div name="portfolio" className="w-screen flex flex-col justify-center pt-12 md:h-screen">
       <div className="text-5xl mx-6 pb-3 lg:mx-24 font-WorkSans font-bold text-blue-500 ">
         PORTFOLIO
       </div>

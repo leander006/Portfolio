@@ -60,7 +60,7 @@ function Skills() {
   ];
 
   return (
-    <div name="skills" className="w-screen pt-12 h-screen ">
+    <div name="skills" className="w-screen justify-center  flex flex-col pt-12 h-screen ">
       <h1 className="text-5xl mx-6 pb-3 lg:mx-24 font-WorkSans font-bold text-blue-500 ">
         SKILLS
       </h1>
