@@ -2,7 +2,10 @@ import React from "react";
 
 function Contact() {
   return (
-    <div name="contact" className="w-screen h-screen  justify-center flex flex-col pt-12">
+    <div
+      name="contact"
+      className="w-screen h-screen  justify-center flex flex-col pt-12"
+    >
       <div className="text-white  text-center">
         <p className="text-5xl mx-6 pb-3 lg:mx-24 font-WorkSans font-bold text-blue-500 ">
           Contact Me
@@ -13,7 +16,7 @@ function Contact() {
       </div>
       <div className="flex justify-center items-center mx-3">
         <form
-          action="https://getform.io/f/188d9c50-2ffc-42a8-bbea-0ed745b65090"
+          action="https://getform.io/f/9112a5e1-1cba-40df-8352-87b726cbb049"
           method="POST"
           className="flex flex-col w-full md:w-1/2 shadow-lg p-2 rounded-lg bg-gray-300"
         >
