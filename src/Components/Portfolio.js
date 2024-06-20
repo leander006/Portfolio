@@ -28,12 +28,6 @@ function Portfolio() {
     },
     {
       id: 5,
-      title: "Blog website",
-      src: "Images/blog.png",
-      href: "https://github.com/leander006/Blog-frontend",
-    },
-    {
-      id: 6,
       title: "Portfolio website",
       src: "Images/portfolio.png",
       href: "https://github.com/leander006/Portfolio",
